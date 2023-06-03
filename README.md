@@ -3,10 +3,10 @@
 # Markdown Badges
 Agregue insignias a su perfil y proyectos
 
-# Table of contents
-- [Markdown Badges](#markdown-badges)
-- [Table of contents](#table-of-contents)
-- [Usage](#usage)
+# Tabla de Contenido 
+- [Insignias de descuento](#markdown-badges)
+- [Tabla de Contenido](#table-of-contents)
+- [Uso](#usage)
 - [Tips](#tips)
 - [Contribution](#contribution)
 - [License](#license)
@@ -53,21 +53,21 @@ Agregue insignias a su perfil y proyectos
    </details>
 
 
-# Usage
-To use a badge:
-- Via Github
-    1. Press `Ctrl` + `f` on your keyboard, to bring out the search modal.
-    1. Enter the name of the badge you need.
-    1. Copy the appropriate `![Name](link)` element and paste it in your Markdown file (e.g. README.md)
-- You could also visit the live site at [ileriayo.github.io/markdown-badges/](https://ileriayo.github.io/markdown-badges/)
+# Uso
+Para usar una insignia:
+- Vía Github
+    1. Presione `Ctrl` + `f` en su teclado para mostrar el modo de búsqueda.
+    1. Introduzca el nombre de la credencial que necesita.
+    1. Copie el elemento `![Nombre](enlace)` apropiado y péguelo en su archivo Markdown (por ejemplo, README.md)
+- También puede visitar el sitio en vivo en [ileriayo.github.io/markdown-badges/](https://ileriayo.github.io/markdown-badges/)
 
 # Tips
 
 <details> 
-<summary>👇 How to use a different badge style</summary>
+<summary>👇Cómo usar un estilo de insignia diferente</summary>
 <hr>
 
-> <strong>Note:</strong> `for-the-badge` is the style that we chose for appearance purposes. Other styles are available at [https://shields.io/#styles](https://shields.io/#styles) and can be used with the badges here. Thanks, @kingthorin for mentioning this!
+> <strong>Note:</strong> `for-the-badge` es el estilo que elegimos por motivos de apariencia. Hay otros estilos disponibles en [https://shields.io/#styles](https://shields.io/#styles) y se pueden usar con las insignias aquí. ¡Gracias, @kingthorin por mencionar esto!
 
 
 Shields.io offers 5 styles, which are:
