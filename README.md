@@ -1,20 +1,36 @@
 ![Markdown-badge-kohasummons-stripped-image](https://user-images.githubusercontent.com/66284362/159115513-3ae48dd6-3d9c-416f-83d4-db48de23fac8.png)
 
+---
 # Markdown Badges
 Agregue insignias a su perfil y proyectos
 
+# Uso
+Para usar una insignia:
+- Vía Github
+    1. Presione `Ctrl` + `f` en su teclado para mostrar el modo de búsqueda.
+    1. Introduzca el nombre de la credencial que necesita.
+    1. Copie el elemento `![Nombre](enlace)` apropiado y péguelo en su archivo Markdown (por ejemplo, README.md)
+- También puede visitar el sitio en vivo en [ileriayo.github.io/markdown-badges/](https://ileriayo.github.io/markdown-badges/)
+
+---
 # Tabla de Contenido 
-- [Insignias de descuento](#markdown-badges)
-- [Tabla de Contenido](#table-of-contents)
-- [Uso](#usage)
-- [Tips](#tips)
-- [Contribution](#contribution)
-- [License](#license)
-- [Badges](#badges)
-  - <details> <summary>List of badges</summary>
- 
-     - [Artificial Intelligence and Bots](#-artificial-intelligence-and-bots)
-     - [Blog](#-blog)
+
+ <details>
+     <summary>Inteligencia Artificial y Bots</summary>
+ 🤖 Artificial Intelligence and Bots
+
+| Name             | Badge                                                                                                                                   | Markdown                                                                                                                                  |
+| ---------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| Amazon Alexa     | ![Amazon Alexa](https://img.shields.io/badge/amazon%20alexa-52b5f7?style=for-the-badge&logo=amazon%20alexa&logoColor=white)             | `![Amazon Alexa](https://img.shields.io/badge/amazon%20alexa-52b5f7?style=for-the-badge&logo=amazon%20alexa&logoColor=white)`             |
+| ChatGPT       | ![ChatGPT](https://img.shields.io/badge/chatGPT-74aa9c?style=for-the-badge&logo=openai&logoColor=white)                       | `![ChatGPT](https://img.shields.io/badge/chatGPT-74aa9c?style=for-the-badge&logo=openai&logoColor=white)`                       |
+| Dependabot       | ![Dependabot](https://img.shields.io/badge/dependabot-025E8C?style=for-the-badge&logo=dependabot&logoColor=white)                       | `![Dependabot](https://img.shields.io/badge/dependabot-025E8C?style=for-the-badge&logo=dependabot&logoColor=white)`                       |
+| Google Assistant | ![Google Assistant](https://img.shields.io/badge/google%20assistant-4285F4?style=for-the-badge&logo=google%20assistant&logoColor=white) | `![Google Assistant](https://img.shields.io/badge/google%20assistant-4285F4?style=for-the-badge&logo=google%20assistant&logoColor=white)` |
+
+</details>
+
+---
+
+- [Blog](#-blog)
      - [Blockchain](#-blockchain)
      - [Browsers](#-browsers)
      - [CD](#-cd)
@@ -53,79 +69,8 @@ Agregue insignias a su perfil y proyectos
    </details>
 
 
-# Uso
-Para usar una insignia:
-- Vía Github
-    1. Presione `Ctrl` + `f` en su teclado para mostrar el modo de búsqueda.
-    1. Introduzca el nombre de la credencial que necesita.
-    1. Copie el elemento `![Nombre](enlace)` apropiado y péguelo en su archivo Markdown (por ejemplo, README.md)
-- También puede visitar el sitio en vivo en [ileriayo.github.io/markdown-badges/](https://ileriayo.github.io/markdown-badges/)
-
-# Tips
-
-<details> 
-<summary>👇Cómo usar un estilo de insignia diferente</summary>
-<hr>
-
-> <strong>Note:</strong> `for-the-badge` es el estilo que elegimos por motivos de apariencia. Hay otros estilos disponibles en [https://shields.io/#styles](https://shields.io/#styles) y se pueden usar con las insignias aquí. ¡Gracias, @kingthorin por mencionar esto!
-
-
-Shields.io offers 5 styles, which are:
-| S/N | Types         | Styles                                                                                                    |
-| :-: | :------------ | :-------------------------------------------------------------------------------------------------------- |
-| 1   | Plastic       | ![Plastic](https://shields.io/badge/style-plastic-03650f?logo=appveyor&style=plastic)                     |
-| 2   | Flat-square   | ![Flat-square](https://shields.io/badge/style-flat--square-03650f?logo=appveyor&style=flat-square)        |
-| 3   | Flat          | ![Flat](https://shields.io/badge/style-flat-03650f?logo=appveyor&style=flat)                              |
-| 4   | Social        | ![Social](https://shields.io/badge/style-social-03650f?logo=appveyor&style=social)                        |
-| 5   | For-the-badge | ![For-the-badge](https://shields.io/badge/style-for--the--badge-03650f?logo=appveyor&style=for-the-badge) |
-
-
-
-💡 To use a different style: Replace `for-the-badge` in the markdown link with any of the styles above.
-```
-Example.
-
-🧷  For plastic
-https://shields.io/badge/style-plastic-green?logo=appveyor&style=plastic
-
-🤏🏽  For Flat
-https://shields.io/badge/style-flat-green?logo=appveyor&style=flat
-```
-
-</details>
-
-<details> 
-<summary>👇 Use Ctrl + F or CMD + F to search</summary>
- <hr>
-
- > <strong>Tip:</strong> Since there are a lot of badges, to search for the particular badge you are looking for, use Ctrl + F and type the name you want. Thanks, @JakyeRU for mentioning this!
-</details>
-
-
-## Contribution
-
-The project has a separate contribution file. Please adhere to the steps listed in the separate contributions [file](./CONTRIBUTING.md)
-
-## Contact
-
-You can reach me on [Twitter @ileriayooo](https://twitter.com/Ileriayooo)
-
-## License
-
-[![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](./LICENSE)
-<hr>
-<hr>
-
 # Badges
 
-### 🤖 Artificial Intelligence and Bots
-
-| Name             | Badge                                                                                                                                   | Markdown                                                                                                                                  |
-| ---------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| Amazon Alexa     | ![Amazon Alexa](https://img.shields.io/badge/amazon%20alexa-52b5f7?style=for-the-badge&logo=amazon%20alexa&logoColor=white)             | `![Amazon Alexa](https://img.shields.io/badge/amazon%20alexa-52b5f7?style=for-the-badge&logo=amazon%20alexa&logoColor=white)`             |
-| ChatGPT       | ![ChatGPT](https://img.shields.io/badge/chatGPT-74aa9c?style=for-the-badge&logo=openai&logoColor=white)                       | `![ChatGPT](https://img.shields.io/badge/chatGPT-74aa9c?style=for-the-badge&logo=openai&logoColor=white)`                       |
-| Dependabot       | ![Dependabot](https://img.shields.io/badge/dependabot-025E8C?style=for-the-badge&logo=dependabot&logoColor=white)                       | `![Dependabot](https://img.shields.io/badge/dependabot-025E8C?style=for-the-badge&logo=dependabot&logoColor=white)`                       |
-| Google Assistant | ![Google Assistant](https://img.shields.io/badge/google%20assistant-4285F4?style=for-the-badge&logo=google%20assistant&logoColor=white) | `![Google Assistant](https://img.shields.io/badge/google%20assistant-4285F4?style=for-the-badge&logo=google%20assistant&logoColor=white)` |
 
 
 [(Back to top)](#table-of-contents)
