@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icono Portafolio | Buscador & Generador Interactivo de Badges</title>
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="https://img.shields.io/badge/Iconos-Portafolio-6366f1?style=flat&logo=github" type="image/x-icon">
+</head>
+<body>
+    <!-- Fondo decorativo con luces de neón difusas -->
+    <div class="blur-bg-radial blur-1"></div>
+    <div class="blur-bg-radial blur-2"></div>
+
+    <div class="container">
+        <!-- CABECERA -->
+        <header class="app-header">
+            <div class="header-logo">
+                <i data-lucide="shield" class="logo-icon"></i>
+                <div class="logo-text">
+                    <h1>Icono Portafolio</h1>
+                    <p class="subtitle">Buscador y Generador de Badges en Español para tu README</p>
+                </div>
+            </div>
+            <div class="header-search-container">
+                <div class="search-wrapper">
+                    <i data-lucide="search" class="search-icon"></i>
+                    <input type="text" id="search-input" placeholder="Buscar badges (ej. React, Firebase, Python)..." autocomplete="off">
+                    <button id="clear-search" class="clear-search-btn" title="Limpiar búsqueda">
+                        <i data-lucide="x"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- LAYOUT PRINCIPAL -->
+        <div class="main-layout">
+            
+            <!-- COLUMNA IZQUIERDA: GENERADOR Y CATEGORÍAS (Sticky) -->
+            <aside class="sidebar">
+                
+                <!-- GENERADOR DE BADGES PERSONALIZADOS -->
+                <section class="card generator-card">
+                    <div class="card-header">
+                        <i data-lucide="sparkles" class="header-accent-icon"></i>
+                        <h2>Generador Custom</h2>
+                    </div>
+                    <p class="card-desc">Crea tu propia insignia con shields.io en tiempo real.</p>
+                    
+                    <div class="generator-form">
+                        <div class="form-group-row">
+                            <div class="form-group">
+                                <label for="gen-label">Etiqueta</label>
+                                <input type="text" id="gen-label" placeholder="ej. Versión" value="Badge">
+                            </div>
+                            <div class="form-group">
+                                <label for="gen-message">Mensaje</label>
+                                <input type="text" id="gen-message" placeholder="ej. 1.0.0" value="Custom">
+                            </div>
+                        </div>
+                        <div class="form-group-row">
+                            <div class="form-group">
+                                <label for="gen-color">Color</label>
+                                <div class="color-picker-wrapper">
+                                    <input type="text" id="gen-color" placeholder="ej. 6366f1" value="6366f1">
+                                    <input type="color" id="gen-color-picker" value="#6366f1">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="gen-style">Estilo</label>
+                                <select id="gen-style">
+                                    <option value="for-the-badge" selected>for-the-badge</option>
+                                    <option value="flat">flat</option>
+                                    <option value="flat-square">flat-square</option>
+                                    <option value="plastic">plastic</option>
+                                    <option value="social">social</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="gen-logo">Icono (SimpleIcons)</label>
+                            <input type="text" id="gen-logo" placeholder="ej. react, github, python (opcional)">
+                        </div>
+
+                        <!-- Previsualización del Badge Custom -->
+                        <div class="preview-container">
+                            <span class="preview-title">Previsualización</span>
+                            <div class="preview-box">
+                                <img id="badge-preview-img" src="https://img.shields.io/badge/Badge-Custom-6366f1?style=for-the-badge" alt="Preview Badge">
+                            </div>
+                        </div>
+
+                        <!-- Botones de Copia del Badge Custom -->
+                        <div class="copy-actions-grid">
+                            <button class="btn btn-primary copy-custom-btn" data-type="markdown" title="Copiar código Markdown">
+                                <i data-lucide="file-code"></i> Markdown
+                            </button>
+                            <button class="btn btn-secondary copy-custom-btn" data-type="html" title="Copiar código HTML">
+                                <i data-lucide="code"></i> HTML
+                            </button>
+                            <button class="btn btn-secondary copy-custom-btn" data-type="url" title="Copiar URL directa">
+                                <i data-lucide="link"></i> URL
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- LISTA DE CATEGORÍAS -->
+                <section class="card categories-card">
+                    <div class="card-header">
+                        <i data-lucide="folder-open" class="header-accent-icon"></i>
+                        <h2>Categorías</h2>
+                    </div>
+                    <nav class="categories-list" id="categories-container">
+                        <div class="skeleton-loader" style="height: 150px;"></div>
+                    </nav>
+                </section>
+
+                <!-- PERFIL DEL AUTOR (BYCHOKE) -->
+                <section class="card profile-card">
+                    <div class="card-header">
+                        <i data-lucide="user" class="header-accent-icon"></i>
+                        <h2>Creador</h2>
+                    </div>
+                    <div class="profile-info">
+                        <h3 class="profile-name">Jose Luis Choquevillca</h3>
+                        <p class="profile-tag">ByChoke Studio</p>
+                        
+                        <div class="profile-socials">
+                            <a href="mailto:choque151.jlc@gmail.com" class="social-link" title="Correo Corporativo">
+                                <i data-lucide="mail"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/jose-luis-choquevillca/" target="_blank" class="social-link" title="LinkedIn">
+                                <i data-lucide="linkedin"></i>
+                            </a>
+                            <a href="https://github.com/ByChokeYT" target="_blank" class="social-link" title="GitHub">
+                                <i data-lucide="github"></i>
+                            </a>
+                            <a href="https://codepen.io/ByChokeYT" target="_blank" class="social-link" title="CodePen">
+                                <i data-lucide="codepen"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="profile-portfolios">
+                            <a href="https://cvbychoke.netlify.app/" target="_blank" class="portfolio-btn">
+                                <i data-lucide="file-user"></i> Mi CV / Portafolio
+                            </a>
+                            <a href="https://bychokeportafolio.netlify.app/" target="_blank" class="portfolio-btn studio">
+                                <i data-lucide="palette"></i> ByChoke Studio
+                            </a>
+                        </div>
+                        
+                        <div class="support-btn-wrapper">
+                            <a href="https://buymeacoffee.com/choque151jr" target="_blank" class="support-btn">
+                                <img src="https://img.shields.io/badge/Apóyame-Buy%20Me%20a%20Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me a Coffee">
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                
+            </aside>
+
+            <!-- COLUMNA DERECHA: GRID DE BADGES -->
+            <main class="content-area">
+                
+                <!-- ESTADÍSTICAS Y RESUMEN -->
+                <section class="stats-bar card">
+                    <div class="stat-item">
+                        <span class="stat-num" id="total-badges-count">0</span>
+                        <span class="stat-label">Insignias Disponibles</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-num" id="total-categories-count">0</span>
+                        <span class="stat-label">Categorías Curadas</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item active-category-info">
+                        <span class="stat-num font-title" id="current-category-name">Todas las Badges</span>
+                        <span class="stat-label">Filtrado Actual</span>
+                    </div>
+                </section>
+
+                <!-- GRID DE TARJETAS DE BADGES -->
+                <div class="badges-grid" id="badges-container">
+                    <!-- Skeleton loading cards -->
+                    <div class="skeleton-card"></div>
+                    <div class="skeleton-card"></div>
+                    <div class="skeleton-card"></div>
+                    <div class="skeleton-card"></div>
+                    <div class="skeleton-card"></div>
+                    <div class="skeleton-card"></div>
+                </div>
+
+                <!-- ESTADO VACÍO (NO RESULTS) -->
+                <div id="no-results" class="no-results-card hidden">
+                    <i data-lucide="search-code" class="no-results-icon"></i>
+                    <h3>No encontramos insignias</h3>
+                    <p>No hay resultados que coincidan con "<span id="search-term-highlight"></span>". Intenta con otro término o crea un badge personalizado en el generador de la izquierda.</p>
+                </div>
+            </main>
+
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="app-footer">
+            <p>Creado con ❤️ por <a href="https://github.com/ByChokeYT" target="_blank" class="author-link">ByChokeYT</a> y optimizado dinámicamente.</p>
+            <p class="footer-note">Sincronizado directamente con el <a href="README.md" class="footer-doc-link"><i data-lucide="file-text" style="width: 14px; height: 14px; display: inline; vertical-align: middle;"></i> README.md</a> original.</p>
+        </footer>
+    </div>
+
+    <!-- CONTENEDOR DE TOASTS -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

@@ -1,15 +1,29 @@
 ![Markdown-badge-kohasummons-stripped-image](https://user-images.githubusercontent.com/66284362/159115513-3ae48dd6-3d9c-416f-83d4-db48de23fac8.png)
 
 ---
-# Markdown Badges
-Agregue insignias a su perfil y proyectos
+# Icono Portafolio 🚀
+Agrega insignias personalizadas a tu perfil de GitHub y proyectos.
+
+> [!TIP]
+> ### 💻 ¡Prueba el Buscador & Generador Interactivo en Vivo!
+> Ahora puedes buscar entre cientos de badges al instante, filtrarlos por categoría y **diseñar tus propias insignias personalizadas** con logos y colores personalizados en tiempo real.
+> 
+> 👉 **[¡ABRIR BUSCADOR INTERACTIVO EN NETLIFY!](https://icono-portafolio.netlify.app)**
+> *(Nota: Una vez que subas el sitio a Netlify, puedes configurar este enlace con tu URL personalizada).*
+
+---
 
 # Uso
+
 Para usar una insignia:
-- Vía Github
-    1. Presione `Ctrl` + `f` en su teclado para mostrar el modo de búsqueda.
-    1. Introduzca el nombre de la credencial que necesita.
-    1. Copie el elemento `![Nombre](enlace)` apropiado y péguelo en su archivo Markdown (por ejemplo, README.md)
+- **Vía Web Interactiva (Recomendado):**
+    1. Abre el buscador interactivo.
+    2. Busca o crea tu insignia en tiempo real.
+    3. ¡Haz clic en copiar y pégala directamente en tu archivo markdown!
+- **Vía GitHub:**
+    1. Presiona `Ctrl` + `f` en tu teclado para buscar en esta página.
+    2. Introduce el nombre de la insignia que necesitas.
+    3. Copia el elemento `![Nombre](enlace)` apropiado de la tabla y pégalo en tu archivo Markdown (por ejemplo, README.md).
 - También puede visitar el sitio en vivo en [ileriayo.github.io/markdown-badges/](https://ileriayo.github.io/markdown-badges/)
 
 ---
@@ -926,3 +940,28 @@ Para usar una insignia:
 
 
 [(Back to top)](#table-of-contents)
+
+---
+
+## 👤 Creador / Autor
+
+**Jose Luis Choquevillca (ByChoke)**
+*Desarrollador Web & Diseñador de Interfaces en ByChoke Studio*
+
+Si te ha sido de utilidad este catálogo o el buscador interactivo, ¡no dudes en conectar conmigo!
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jose-luis-choquevillca/)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ByChokeYT)
+[![CodePen](https://img.shields.io/badge/CodePen-000000?style=for-the-badge&logo=codepen&logoColor=white)](https://codepen.io/ByChokeYT)
+[![CV Portafolio](https://img.shields.io/badge/Mi%20Portafolio-00ffd2?style=for-the-badge&logo=netlify&logoColor=black)](https://cvbychoke.netlify.app/)
+[![ByChoke Studio](https://img.shields.io/badge/ByChoke%20Studio-6366f1?style=for-the-badge&logo=netlify&logoColor=white)](https://bychokeportafolio.netlify.app/)
+
+📩 **Contacto Corporativo:** choque151.jlc@gmail.com
+
+---
+
+### ☕ Apoya este proyecto
+
+Si quieres apoyar mi trabajo y el mantenimiento de este catálogo interactivo, puedes invitarme un café:
+
+[![Apóyame en Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/choque151jr)
